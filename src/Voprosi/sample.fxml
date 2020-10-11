@@ -1,0 +1,32 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<GridPane fx:controller="Voprosi.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+
+
+    <Label fx:id="Question" GridPane.rowIndex="1">
+        Вопрос
+    </Label>
+    <GridPane>
+
+        <Button fx:id="buttonA" GridPane.rowIndex="0" GridPane.columnIndex="0" onAction="#OtvetAClicked">
+            Вопрос 1
+        </Button>
+        <Button fx:id="buttonB" GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#OtvetBClicked">
+            Вопрос 2
+        </Button>
+        <Button fx:id="buttonC" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#OtvetCClicked">
+            Вопрос 3
+        </Button>
+        <Button fx:id="buttonD" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#OtvetDClicked">
+            Вопрос 4
+        </Button>
+
+    </GridPane>
+    <Button fx:id="rightQuestion" GridPane.rowIndex="2" onAction="#rightQuestionClicked">
+        Ответ
+    </Button>
+</GridPane>
